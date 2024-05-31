@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --text-big : #28283D;
+    --text-small: #87879D;
+    --button1 :#4D96A9;
+    --inside:#8FE3F9;
+    --button2:#855FB1;
+    --button3:#8FE3F9;
+    --button4:#D9B8FF;
+}
+
+.App {
+    display: grid;
+    place-items: center;
+    height: 100vh; /* ارتفاع الشاشة بالكامل */
+    text-align: center;
+  }
+
+.red-hat-display{
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  .col{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    justify-content: center; 
+  }
+  
+.bg {
+    height: 80px;
+    background: rgba(128, 128, 128, 0.315);
+    width:1.5px;
+}
+.bo{
+    background-color: white;
+    border-radius:50%;
+    border: rgba(128, 128, 128, 0.315) 1px solid;
+}
+.disply{
+
+    display: none;
+}
+.img {
+    display: inline-block;
+    max-height: 242px;
+    max-width: 255px;
+    border-radius: 0.6rem;
+} 
+
+.bg-pic{
+    background-color: #4d97a9;
+    background-image: url(./assets/desktop/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:multiply;
+}
+
+@media only screen and (max-width:768px) { 
+    .bg-pic{
+        background-image: url(./assets/tablet/image-footer.jpg);
+
+    }
+    .black{
+        display: none;
+    }
+    .display{
+        display: inline-block;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .bg-pic{
+        background-image: url(./assets/mobile/image-footer.jpg);
+    }
+    .black{
+        display: none;
+    }
+    .display{
+        display: inline-block;
+    }
+}
