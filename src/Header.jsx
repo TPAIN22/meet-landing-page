@@ -13,7 +13,7 @@ function Header () {
             <img src={Left} alt="people" className='black'/>
             <img src={Tablet} alt="people" className='disply'/>
                 <div className='flex flex-col gap-10 items-center text-center mt-20 max-w-lg' >
-                    <h1 className='text-7xl font-bold text-[var(--text-big)] '>Groub Chat for Everyone</h1>
+                    <h1 className='text-7xl font-bold text-[var(--text-big)] '>Group Chat for Everyone</h1>
                     <p className='text-[var(--text-small)] text-xl '> Meet makes it easy to connect with others face-to-face virtually and collaborate across any device</p>
                     <div className='flex gap-4 color max-md:flex-col'>
                     <button className='text-xl bg-[var(--button1)] hover:bg-[var(--button3)] px-6 py-3 text-white rounded-full'>Download <span className='text-[var(--inside)] hover:text-[var(--button1)]'>v1.3</span></button>
